@@ -4,7 +4,7 @@ var vs = document.getElementById("author")
 var res =[];
 
 function maQuote()  {
-    const random = Number.parseInt(Math.random()*x.length );
+    var random = Number.parseInt(Math.random()*x.length );
     document.querySelector('#quote').textContent = `${x[random].quote}`;
     document.querySelector('#author').textContent = `${x[random].author}`;
     
@@ -16,7 +16,7 @@ function maQuote()  {
 
 };
  
-const x = [
+var x = [
     {'author': ' ― Oscar Wilde', 
      'quote': ' Two things are infinite: the universe and human stupidity; and Im not sure about the universe.'
     },
